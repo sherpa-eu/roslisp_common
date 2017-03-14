@@ -27,7 +27,8 @@
         (if (eq validate-args :warn)
             (progn
               (setq orientation (normalize orientation))
-              (warn "Normalized orientation component to ~a" orientation))
+              ;; (warn "Normalized orientation component to ~a" orientation)
+              )
             (error "Orientation component ~a not normalized" orientation))))))
 
 (defmethod print-object ((obj pose) strm)

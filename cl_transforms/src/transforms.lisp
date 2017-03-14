@@ -37,7 +37,7 @@
         (if (eq validate-args :warn)
             (progn
               (setq rotation (normalize rotation))
-              (warn "Normalized rotation component to ~a" rotation)
+              ;; (warn "Normalized rotation component to ~a" rotation)
               )
             (error "Rotation component ~a not normalized" rotation))))))
 
